@@ -64,7 +64,7 @@ module.exports = {
     //   }
     // }
   },
-  plugins: ['~/plugins/ddv-restful-api', '~/plugins/ddv-util', '~/plugins/inject'],
+  plugins: ['~/plugins/ddv-restful-api', '~/plugins/ddv-util', '~/plugins/inject', { src: '~/plugins/baiduMap', ssr: false }],
   /*
      ** Global CSS
      */
@@ -77,6 +77,7 @@ module.exports = {
   },
   modules: ['@nuxtjs/component-cache'],
   router: {
+    // middleware: ['getBaseData', 'wap', 'getSeo'],
     scrollBehavior (to, from, savedPosition) {
       if (savedPosition) {
         return savedPosition

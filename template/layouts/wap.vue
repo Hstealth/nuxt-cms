@@ -47,7 +47,7 @@ export default {
   middleware: 'wechatConfig',
   head () {
     return {
-      title: this.$store.state.siteTitle,
+      title: this.$store.state.siteTitle || '首页',
       meta: [
         {
           'charset': 'utf-8'

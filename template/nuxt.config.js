@@ -64,7 +64,7 @@ module.exports = {
     //   }
     // }
   },
-  plugins: ['~/plugins/ddv-restful-api', '~/plugins/ddv-util', '~/plugins/inject', { src: '~/plugins/baiduMap', ssr: false }],
+  plugins: ['~/plugins/ddv-restful-api', '~/plugins/ddv-util', '~/plugins/inject', { src: '~/plugins/baidu-map', ssr: false }],
   /*
      ** Global CSS
      */
